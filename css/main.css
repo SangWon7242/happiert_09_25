@@ -82,9 +82,13 @@ html > body {
   height: 100%;
   padding-inline: 5rem;
   display: flex;
-  align-items: center;
 }
 
+.top-bar__menu-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .top-bar__menu-wrap .menu-link {
   display: block;
   font-size: 1.25rem;
@@ -92,7 +96,7 @@ html > body {
   font-weight: 700;
   white-space: nowrap;
   position: relative;
-  padding-block: 0.7rem;
+  padding-block: 0.5rem;
 }
 .top-bar__menu-wrap .menu-link::after {
   content: "";
@@ -108,12 +112,34 @@ html > body {
   width: 100%;
 }
 
-.logo {
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.logo-wrap .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.logo img {
+.logo-wrap .logo img {
   max-width: 300px;
   max-height: 44px;
+}
+.logo-wrap .top-bar__right {
+  background-color: red;
+}
+
+.util-menu {
+  height: 100%;
+}
+.util-menu ul {
+  gap: 0 2rem;
+}
+.util-menu li {
+  flex-shrink: 0;
+}
+.util-menu a {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
