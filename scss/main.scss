@@ -133,3 +133,14 @@ $color-main: #be201f;
     }
   }
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 300px;
+    max-height: 44px;
+  }
+}
