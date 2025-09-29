@@ -182,3 +182,48 @@ html > body {
 .product-list-wrap .inner {
   margin-inline: 5rem;
 }
+.product-list-wrap .prod-img-box a {
+  display: block;
+}
+.product-list-wrap .text-box {
+  margin-top: 1rem;
+}
+.product-list-wrap .text-box a {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #be201f;
+  letter-spacing: -0.04em;
+  transition: opacity 0.5s;
+  word-break: keep-all;
+}
+.product-list-wrap .text-box a:hover {
+  opacity: 0.5;
+}
+.product-list-wrap .price-wrap .price-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #be201f;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+.product-list-wrap .price-wrap .price-box .before-sale-price {
+  font-weight: 400;
+  color: #e0a8a8;
+  text-decoration: line-through;
+}
+.product-list-wrap .price-wrap .discount-box {
+  font-size: 1rem;
+  color: #be201f;
+  letter-spacing: -0.04em;
+  padding: 0.565rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  border: 1px solid #be201f;
+  border-radius: 100px;
+}

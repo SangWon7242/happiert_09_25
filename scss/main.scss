@@ -216,4 +216,60 @@ $color-main: #be201f;
   .inner {
     margin-inline: 5rem;
   }
+
+  .prod-img-box {
+    a {
+      display: block;
+    }
+  }
+
+  .text-box {
+    margin-top: 1rem;
+
+    a {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      transition: opacity 0.5s;
+      word-break: keep-all;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .price-wrap {
+    .price-box {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.5rem;
+
+      .before-sale-price {
+        font-weight: 400;
+        color: #e0a8a8;
+        text-decoration: line-through;
+      }
+    }
+
+    .discount-box {
+      font-size: 1rem;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      padding: 0.565rem 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      border: 1px solid $color-main;
+      border-radius: 100px;
+    }
+  }
 }
