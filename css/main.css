@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Pretendard";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff") format("woff");
@@ -56,6 +57,7 @@ html > body {
   font-family: "Pretendard";
 }
 
+/* 헤더 구현 시작 */
 .header-top-banner {
   position: fixed;
   top: 0;
@@ -125,9 +127,6 @@ html > body {
   max-width: 300px;
   max-height: 44px;
 }
-.logo-wrap .top-bar__right {
-  background-color: red;
-}
 
 .util-menu {
   height: 100%;
@@ -143,3 +142,15 @@ html > body {
   height: 100%;
   align-items: center;
 }
+
+/* 헤더 구현 끝 */
+/* 메인 배너 구현 시작 */
+.main-banner {
+  background-image: url("https://ecimg.cafe24img.com/pg1097b49582155038/happiert/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/a28fe238a9d2aef23923b6b4faa6c4f7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+/* 메인 배너 구현 끝 */
