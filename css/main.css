@@ -151,6 +151,31 @@ html > body {
   background-position: center;
   background-size: cover;
   height: 90vh;
+  margin-bottom: 6.25rem;
+}
+.main-banner .inner {
+  height: 100%;
+  margin-inline: 5rem;
+  position: relative;
+}
+.main-banner .text-box {
+  position: absolute;
+  left: 0;
+  top: calc(145px + 5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.main-banner .text-box .title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+.main-banner .text-box .desc {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: -0.04em;
 }
 
 /* 메인 배너 구현 끝 */
