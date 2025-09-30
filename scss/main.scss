@@ -72,6 +72,7 @@
 
 html > body {
   font-family: "Pretendard";
+  overflow-x: hidden;
 }
 
 $color-main: #be201f;
@@ -270,6 +271,40 @@ $color-main: #be201f;
       gap: 0.25rem;
       border: 1px solid $color-main;
       border-radius: 100px;
+    }
+  }
+}
+
+.marketing-section {
+  margin-top: 9.375rem;
+}
+
+.marquees_wrapper {
+  width: 100%;
+
+  .marquee {
+    display: flex;
+    cursor: pointer;
+
+    .marquee_group {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 25rem;
+      padding: 0 5rem;
+
+      &.clone {
+        border: 5px solid green;
+      }
+    }
+
+    .item {
+      font-size: 10.625rem;
+      font-weight: 500;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
   }
 }

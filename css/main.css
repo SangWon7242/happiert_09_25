@@ -55,6 +55,7 @@
 }
 html > body {
   font-family: "Pretendard";
+  overflow-x: hidden;
 }
 
 /* 헤더 구현 시작 */
@@ -226,4 +227,34 @@ html > body {
   gap: 0.25rem;
   border: 1px solid #be201f;
   border-radius: 100px;
+}
+
+.marketing-section {
+  margin-top: 9.375rem;
+}
+
+.marquees_wrapper {
+  width: 100%;
+}
+.marquees_wrapper .marquee {
+  display: flex;
+  cursor: pointer;
+}
+.marquees_wrapper .marquee .marquee_group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 25rem;
+  padding: 0 5rem;
+}
+.marquees_wrapper .marquee .marquee_group.clone {
+  border: 5px solid green;
+}
+.marquees_wrapper .marquee .item {
+  font-size: 10.625rem;
+  font-weight: 500;
+  color: #be201f;
+  letter-spacing: -0.04em;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
