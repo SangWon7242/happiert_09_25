@@ -83,7 +83,7 @@ html > body {
 .top-bar .inner {
   max-width: 100%;
   height: 100%;
-  padding-inline: 5rem;
+  margin-inline: 5rem;
   display: flex;
 }
 
@@ -232,6 +232,9 @@ html > body {
 .marketing-section {
   margin-top: 9.375rem;
 }
+.marketing-section > .inner {
+  margin-inline: 5rem;
+}
 
 .marquees_wrapper {
   width: 100%;
@@ -257,4 +260,22 @@ html > body {
   letter-spacing: -0.04em;
   flex-shrink: 0;
   white-space: nowrap;
+}
+
+.marketing__content-box {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.marketing__content-box .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+.marketing__content-box .grid-item {
+  border: 5px solid red;
+  height: 100%;
+  aspect-ratio: 1;
 }
