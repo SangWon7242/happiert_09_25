@@ -328,8 +328,70 @@ $inner-margin: 5rem;
   }
 
   .grid-item {
-    border: 5px solid red;
     height: 100%;
     aspect-ratio: 1;
+    position: relative;
+  }
+
+  .img-box {
+    width: 100%;
+
+    img {
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+
+  .text-box {
+    position: absolute;
+    inset: 0;
+
+    .title {
+      font-size: 3.75rem;
+      font-weight: 700;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      margin-bottom: 1rem;
+      word-break: keep-all;
+      position: absolute;
+      top: 10%;
+      left: 7%;
+    }
+
+    .des {
+      position: absolute;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: $color-main;
+      letter-spacing: -0.04em;
+      word-break: keep-all;
+      top: 27%;
+      left: 5%;
+    }
+
+    .more-box {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+
+      a {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $color-main;
+        letter-spacing: -0.04em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 2rem;
+        border: 1px solid $color-main;
+        border-radius: 100px;
+        transition: all 0.5s;
+
+        &:hover {
+          color: #fff;
+          background-color: $color-main;
+        }
+      }
+    }
   }
 }
