@@ -310,6 +310,31 @@ $inner-margin: 5rem;
   }
 }
 
+@mixin more-box($box-color: $color-main, $horvered-color: #fff) {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+
+  a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $box-color;
+    letter-spacing: -0.04em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    border: 1px solid $box-color;
+    border-radius: 100px;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $horvered-color;
+      background-color: $box-color;
+    }
+  }
+}
+
 .marketing__content-box {
   margin-top: 6.25rem;
   display: flex;
@@ -366,28 +391,7 @@ $inner-margin: 5rem;
     }
 
     .more-box {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-
-      a {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: $color-main;
-        letter-spacing: -0.04em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.75rem 2rem;
-        border: 1px solid $color-main;
-        border-radius: 100px;
-        transition: all 0.5s;
-
-        &:hover {
-          color: #fff;
-          background-color: $color-main;
-        }
-      }
+      @include more-box();
     }
   }
 }
@@ -438,6 +442,45 @@ $inner-margin: 5rem;
       100% {
         transform: rotate(360deg);
       }
+    }
+  }
+}
+
+.content-bottom-wrap {
+  background-image: url("https://ecimg.cafe24img.com/pg1097b49582155038/happiert/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/8d374422b05976c6c5a54c774e1d7748.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 740px;
+  position: relative;
+
+  .content-bottom__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+
+    .title {
+      font-size: 3.75rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.125rem;
+    }
+
+    .des {
+      font-size: 1.25rem;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .more-box {
+      @include more-box(#fff, $color-main);
+      position: static;
     }
   }
 }

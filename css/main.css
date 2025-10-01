@@ -375,3 +375,57 @@ html > body {
     transform: rotate(360deg);
   }
 }
+
+.content-bottom-wrap {
+  background-image: url("https://ecimg.cafe24img.com/pg1097b49582155038/happiert/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/8d374422b05976c6c5a54c774e1d7748.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 740px;
+  position: relative;
+}
+.content-bottom-wrap .content-bottom__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+.content-bottom-wrap .content-bottom__text-box .title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.125rem;
+}
+.content-bottom-wrap .content-bottom__text-box .des {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.content-bottom-wrap .content-bottom__text-box .more-box {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  position: static;
+}
+.content-bottom-wrap .content-bottom__text-box .more-box a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+.content-bottom-wrap .content-bottom__text-box .more-box a:hover {
+  color: #be201f;
+  background-color: #fff;
+}
