@@ -458,6 +458,7 @@ html > body {
   letter-spacing: -0.04em;
   position: relative;
   padding-inline: 0.3rem;
+  font-size: 1.25rem;
 }
 .footer__info .info-text:not(.not-bar)::after {
   content: "";
@@ -473,4 +474,20 @@ html > body {
   font-weight: 300;
   color: #fff;
   letter-spacing: -0.04em;
+  font-size: 1.25rem;
+}
+
+.footer__guide .guide-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+.footer__guide .guide-item a {
+  font-size: 1.25rem;
+  color: #fff;
+  display: block;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid;
 }
