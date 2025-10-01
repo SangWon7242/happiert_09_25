@@ -72,11 +72,16 @@
 
 html > body {
   font-family: "Pretendard";
+  background-color: #f7f6f2;
   overflow-x: hidden;
 }
 
 $color-main: #be201f;
 $inner-margin: 5rem;
+
+.inner {
+  margin-inline: $inner-margin;
+}
 
 /* 헤더 구현 시작 */
 .header-top-banner {
@@ -100,11 +105,11 @@ $inner-margin: 5rem;
   position: fixed;
   top: 45px;
   inset-inline: 0;
+  z-index: 950;
 
   .inner {
     max-width: 100%;
     height: 100%;
-    margin-inline: $inner-margin;
     display: flex;
   }
 }
@@ -186,7 +191,6 @@ $inner-margin: 5rem;
 
   .inner {
     height: 100%;
-    margin-inline: $inner-margin;
     position: relative;
   }
 
@@ -215,10 +219,6 @@ $inner-margin: 5rem;
 /* 메인 배너 구현 끝 */
 
 .product-list-wrap {
-  .inner {
-    margin-inline: $inner-margin;
-  }
-
   .prod-img-box {
     a {
       display: block;
@@ -277,11 +277,7 @@ $inner-margin: 5rem;
 }
 
 .marketing-section {
-  margin-top: 9.375rem;
-
-  > .inner {
-    margin-inline: $inner-margin;
-  }
+  margin-block: 9.375rem;
 }
 
 .marquees_wrapper {
@@ -391,6 +387,56 @@ $inner-margin: 5rem;
           color: #fff;
           background-color: $color-main;
         }
+      }
+    }
+  }
+}
+
+.healthy-section {
+  .content-top-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.313rem;
+    margin-bottom: 9.375rem;
+  }
+
+  .text-box {
+    flex: 1;
+    font-size: 7.5rem;
+    font-weight: 500;
+    color: $color-main;
+    letter-spacing: -0.04em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 1.5rem;
+
+    .badge {
+      display: inline-flex;
+      padding: 0.3rem 5.45rem;
+      border: 2px solid $color-main;
+      border-radius: 100px;
+    }
+  }
+
+  .icon-box {
+    width: 16.25rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      animation: rotation 10s linear infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
       }
     }
   }
