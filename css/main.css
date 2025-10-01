@@ -477,6 +477,9 @@ html > body {
   font-size: 1.25rem;
 }
 
+.footer__guide {
+  min-width: 20rem;
+}
 .footer__guide .guide-title {
   font-size: 1.875rem;
   font-weight: 700;
@@ -490,4 +493,29 @@ html > body {
   display: block;
   padding: 0.625rem 0;
   border-bottom: 1px solid;
+}
+
+.footer__conten-us .conten-us-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+.footer__conten-us .content-box .title {
+  font-size: 1.875rem;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.625rem;
+}
+.footer__conten-us .content-box .desc {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+.footer__conten-us .content-box .info {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-top: 2rem;
 }

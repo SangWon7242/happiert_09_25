@@ -547,6 +547,8 @@ $inner-margin: 5rem;
 }
 
 .footer__guide {
+  min-width: 20rem;
+
   .guide-title {
     @include footer-sub-title;
   }
@@ -558,6 +560,34 @@ $inner-margin: 5rem;
       display: block;
       padding: 0.625rem 0;
       border-bottom: 1px solid;
+    }
+  }
+}
+
+.footer__conten-us {
+  .conten-us-title {
+    @include footer-sub-title;
+  }
+
+  .content-box {
+    .title {
+      font-size: 1.875rem;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.625rem;
+    }
+
+    .desc {
+      font-size: 1.25rem;
+      color: #fff;
+      letter-spacing: -0.04em;
+    }
+
+    .info {
+      font-size: 1.25rem;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-top: 2rem;
     }
   }
 }
