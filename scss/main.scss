@@ -484,3 +484,58 @@ $inner-margin: 5rem;
     }
   }
 }
+
+#footer {
+  background: $color-main;
+
+  .inner {
+    margin: 0;
+    padding: 6.25rem 5rem 8.75rem;
+  }
+
+  .logo-box {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.footer__info {
+  .info {
+    &-title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+    }
+
+    &-box {
+      margin-bottom: 2.5rem;
+    }
+
+    &-text {
+      display: inline-block;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: -0.04em;
+      position: relative;
+      padding-inline: 0.3rem;
+
+      &:not(.not-bar)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -3px;
+        transform: translateY(-50%);
+        width: 1.3px;
+        height: 12px;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .copy-right {
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: -0.04em;
+  }
+}
