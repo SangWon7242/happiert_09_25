@@ -314,6 +314,12 @@ $inner-margin: 5rem;
   height: 90vh;
   margin-bottom: 6.25rem;
 
+  @media (480px >= width) {
+    background-image: url("https://ecimg.cafe24img.com/pg1097b49582155038/happiert/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/bf9f9cf7085c29b5a6c8e51c74f356e0.png");
+    height: 80dvh;
+    margin-bottom: 5rem;
+  }
+
   .inner {
     height: 100%;
     position: relative;
@@ -327,17 +333,36 @@ $inner-margin: 5rem;
     flex-direction: column;
     gap: 2.5rem;
 
+    @media (480px >= width) {
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      width: 100%;
+      gap: 1.2rem;
+    }
+
     .title {
       font-size: clamp(2.5rem, 5vw, 3.125rem);
       font-weight: 700;
       color: #fff;
       letter-spacing: -0.04em;
+
+      @media (480px >= width) {
+        color: $color-main;
+        font-size: 2rem;
+        text-align: center;
+      }
     }
 
     .desc {
       font-size: clamp(0.9rem, 3vw, 1.25rem);
       color: #fff;
       letter-spacing: -0.04em;
+
+      @media (480px >= width) {
+        color: $color-main;
+      }
     }
   }
 }

@@ -268,6 +268,13 @@ html > body {
   height: 90vh;
   margin-bottom: 6.25rem;
 }
+@media (480px >= width) {
+  .main-banner {
+    background-image: url("https://ecimg.cafe24img.com/pg1097b49582155038/happiert/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/bf9f9cf7085c29b5a6c8e51c74f356e0.png");
+    height: 80dvh;
+    margin-bottom: 5rem;
+  }
+}
 .main-banner .inner {
   height: 100%;
   position: relative;
@@ -280,16 +287,38 @@ html > body {
   flex-direction: column;
   gap: 2.5rem;
 }
+@media (480px >= width) {
+  .main-banner .text-box {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    width: 100%;
+    gap: 1.2rem;
+  }
+}
 .main-banner .text-box .title {
   font-size: clamp(2.5rem, 5vw, 3.125rem);
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.04em;
 }
+@media (480px >= width) {
+  .main-banner .text-box .title {
+    color: #be201f;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .main-banner .text-box .desc {
   font-size: clamp(0.9rem, 3vw, 1.25rem);
   color: #fff;
   letter-spacing: -0.04em;
+}
+@media (480px >= width) {
+  .main-banner .text-box .desc {
+    color: #be201f;
+  }
 }
 
 /* 메인 배너 구현 끝 */
