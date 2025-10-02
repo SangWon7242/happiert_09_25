@@ -281,13 +281,13 @@ html > body {
   gap: 2.5rem;
 }
 .main-banner .text-box .title {
-  font-size: 3.125rem;
+  font-size: clamp(2.5rem, 5vw, 3.125rem);
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.04em;
 }
 .main-banner .text-box .desc {
-  font-size: 1.25rem;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
   color: #fff;
   letter-spacing: -0.04em;
 }
