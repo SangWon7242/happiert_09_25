@@ -80,6 +80,11 @@ html > body {
   justify-content: center;
   z-index: 950;
 }
+@media (480px >= width) {
+  .header-top-banner {
+    height: 40px;
+  }
+}
 .header-top-banner a {
   color: #fff;
   transition: font-size 0.5s;
@@ -90,11 +95,17 @@ html > body {
   }
 }
 
+/* pc 헤더 구현 시작 */
 .top-bar {
   position: fixed;
   top: 45px;
   inset-inline: 0;
   z-index: 950;
+}
+@media (480px >= width) {
+  .top-bar {
+    display: none;
+  }
 }
 .top-bar .inner {
   max-width: 100%;
@@ -207,6 +218,44 @@ html > body {
   display: flex;
   height: 100%;
   align-items: center;
+}
+
+/* pc 헤더 구현 끝 */
+/* mobile 헤더 구현 시작 */
+.mobile-top-bar {
+  display: none;
+  position: fixed;
+  top: 40px;
+  inset-inline: 0;
+  z-index: 900;
+}
+.mobile-top-bar .inner {
+  margin-inline: 1rem;
+  height: 60px;
+}
+@media (480px >= width) {
+  .mobile-top-bar {
+    display: block;
+  }
+}
+
+.mobile-top-bar__mid {
+  flex-shrink: 0;
+}
+.mobile-top-bar__mid .mobile-logo img {
+  max-height: 1.2rem;
+}
+
+.mobile-top-bar__right {
+  flex-shrink: 0;
+}
+.mobile-top-bar__right .util-wrap a {
+  display: inline-block;
+  padding-inline: 0.2rem;
+}
+.mobile-top-bar__right .util-wrap a img {
+  aspect-ratio: 1;
+  max-height: 1.3rem;
 }
 
 /* 헤더 구현 끝 */

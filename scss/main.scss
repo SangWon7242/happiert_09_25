@@ -99,6 +99,10 @@ $inner-margin: 5rem;
   justify-content: center;
   z-index: 950;
 
+  @media (480px >= width) {
+    height: 40px;
+  }
+
   a {
     color: #fff;
     transition: font-size 0.5s;
@@ -109,11 +113,16 @@ $inner-margin: 5rem;
   }
 }
 
+/* pc 헤더 구현 시작 */
 .top-bar {
   position: fixed;
   top: 45px;
   inset-inline: 0;
   z-index: 950;
+
+  @media (480px >= width) {
+    display: none;
+  }
 
   .inner {
     max-width: 100%;
@@ -248,6 +257,52 @@ $inner-margin: 5rem;
     align-items: center;
   }
 }
+/* pc 헤더 구현 끝 */
+
+/* mobile 헤더 구현 시작 */
+.mobile-top-bar {
+  display: none;
+  position: fixed;
+  top: 40px;
+  inset-inline: 0;
+  z-index: 900;
+
+  .inner {
+    margin-inline: 1rem;
+    height: 60px;
+  }
+
+  @media (480px >= width) {
+    display: block;
+  }
+}
+
+.mobile-top-bar__mid {
+  flex-shrink: 0;
+
+  .mobile-logo {
+    img {
+      max-height: 1.2rem;
+    }
+  }
+}
+
+.mobile-top-bar__right {
+  flex-shrink: 0;
+
+  .util-wrap {
+    a {
+      display: inline-block;
+      padding-inline: 0.2rem;
+
+      img {
+        aspect-ratio: 1;
+        max-height: 1.3rem;
+      }
+    }
+  }
+}
+
 /* 헤더 구현 끝 */
 
 /* 메인 배너 구현 시작 */
