@@ -465,6 +465,10 @@ $inner-margin: 5rem;
 
 .marketing-section {
   margin-block: 9.375rem;
+
+  @media (1024px >= width) {
+    margin-block: 3.5rem;
+  }
 }
 
 .marquees_wrapper {
@@ -480,10 +484,6 @@ $inner-margin: 5rem;
       align-items: center;
       gap: 25rem;
       padding: 0 5rem;
-
-      &.clone {
-        border: 5px solid green;
-      }
     }
 
     .item {
@@ -493,6 +493,11 @@ $inner-margin: 5rem;
       letter-spacing: -0.04em;
       flex-shrink: 0;
       white-space: nowrap;
+
+      @media (1024px >= width) {
+        font-size: 7rem;
+        font-weight: 400;
+      }
     }
   }
 }

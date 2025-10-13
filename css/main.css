@@ -397,6 +397,11 @@ html > body {
 .marketing-section {
   margin-block: 9.375rem;
 }
+@media (1024px >= width) {
+  .marketing-section {
+    margin-block: 3.5rem;
+  }
+}
 
 .marquees_wrapper {
   width: 100%;
@@ -412,9 +417,6 @@ html > body {
   gap: 25rem;
   padding: 0 5rem;
 }
-.marquees_wrapper .marquee .marquee_group.clone {
-  border: 5px solid green;
-}
 .marquees_wrapper .marquee .item {
   font-size: 10.625rem;
   font-weight: 500;
@@ -422,6 +424,12 @@ html > body {
   letter-spacing: -0.04em;
   flex-shrink: 0;
   white-space: nowrap;
+}
+@media (1024px >= width) {
+  .marquees_wrapper .marquee .item {
+    font-size: 7rem;
+    font-weight: 400;
+  }
 }
 
 .marketing__content-box {
