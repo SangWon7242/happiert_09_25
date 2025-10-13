@@ -2,7 +2,7 @@ function productListSwiperInit() {
   const swiper = new Swiper(".product-list-wrap .swiper", {
     loop: true /* 슬라이드 반복 여부 */,
     speed: 1000 /* 슬라이드 넘어가는 속도 */,
-    spaceBetween: 20,
+    // spaceBetween: 20,
     slidesPerView: "auto",
     slidesPerGroup: 1,
     breakpoints: {
