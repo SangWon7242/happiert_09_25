@@ -322,6 +322,32 @@ html > body {
 }
 
 /* 메인 배너 구현 끝 */
+@media (1024px >= width) {
+  .product-list-wrap .swiper {
+    overflow: visible;
+  }
+  .product-list-wrap .swiper .swiper-slide {
+    width: 430px;
+  }
+  .product-list-wrap .prod-img-box img {
+    height: 520px;
+  }
+  .product-list-wrap .text-box a {
+    font-size: 1rem !important;
+  }
+  .product-list-wrap .price-box {
+    font-size: 1rem !important;
+  }
+  .product-list-wrap .discount-box {
+    font-size: 0.75rem !important;
+    padding: 0.3rem 1rem !important;
+  }
+}
+@media (480px >= width) {
+  .product-list-wrap .swiper-slide {
+    width: 360px !important;
+  }
+}
 .product-list-wrap .prod-img-box a {
   display: block;
 }

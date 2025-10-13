@@ -369,6 +369,43 @@ $inner-margin: 5rem;
 /* 메인 배너 구현 끝 */
 
 .product-list-wrap {
+  @media (1024px >= width) {
+    .swiper {
+      overflow: visible;
+
+      .swiper-slide {
+        width: 430px;
+      }
+    }
+
+    .prod-img-box {
+      img {
+        height: 520px;
+      }
+    }
+
+    .text-box {
+      a {
+        font-size: 1rem !important;
+      }
+    }
+
+    .price-box {
+      font-size: 1rem !important;
+    }
+
+    .discount-box {
+      font-size: 0.75rem !important;
+      padding: 0.3rem 1rem !important;
+    }
+  }
+
+  @media (480px >= width) {
+    .swiper-slide {
+      width: 360px !important;
+    }
+  }
+
   .prod-img-box {
     a {
       display: block;
