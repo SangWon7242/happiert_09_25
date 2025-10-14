@@ -702,6 +702,16 @@ html > body {
   min-height: 740px;
   position: relative;
 }
+@media (720px >= width) {
+  .content-bottom-wrap {
+    min-height: 540px;
+  }
+}
+@media (480px >= width) {
+  .content-bottom-wrap {
+    min-height: 320px;
+  }
+}
 .content-bottom-wrap .content-bottom__text-box {
   display: flex;
   flex-direction: column;
@@ -717,12 +727,34 @@ html > body {
   letter-spacing: -0.04em;
   margin-bottom: 1.125rem;
 }
+@media (720px >= width) {
+  .content-bottom-wrap .content-bottom__text-box .title {
+    font-size: 2.75rem;
+  }
+}
+@media (480px >= width) {
+  .content-bottom-wrap .content-bottom__text-box .title {
+    font-size: 2rem;
+  }
+}
 .content-bottom-wrap .content-bottom__text-box .des {
   font-size: 1.25rem;
   color: #fff;
   letter-spacing: -0.04em;
   margin-bottom: 5rem;
   text-align: center;
+}
+@media (720px >= width) {
+  .content-bottom-wrap .content-bottom__text-box .des {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (480px >= width) {
+  .content-bottom-wrap .content-bottom__text-box .des {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .content-bottom-wrap .content-bottom__text-box .more-box {
   position: absolute;
@@ -746,6 +778,12 @@ html > body {
 .content-bottom-wrap .content-bottom__text-box .more-box a:hover {
   color: #be201f;
   background-color: #fff;
+}
+@media (480px >= width) {
+  .content-bottom-wrap .content-bottom__text-box .more-box a {
+    font-size: 0.9rem;
+    padding: 0.35rem 1.3rem;
+  }
 }
 
 #footer {

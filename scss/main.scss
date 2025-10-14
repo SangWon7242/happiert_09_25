@@ -768,6 +768,14 @@ $inner-margin: 5rem;
   min-height: 740px;
   position: relative;
 
+  @media (720px >= width) {
+    min-height: 540px;
+  }
+
+  @media (480px >= width) {
+    min-height: 320px;
+  }
+
   .content-bottom__text-box {
     display: flex;
     flex-direction: column;
@@ -782,6 +790,14 @@ $inner-margin: 5rem;
       color: #fff;
       letter-spacing: -0.04em;
       margin-bottom: 1.125rem;
+
+      @media (720px >= width) {
+        font-size: 2.75rem;
+      }
+
+      @media (480px >= width) {
+        font-size: 2rem;
+      }
     }
 
     .des {
@@ -790,11 +806,28 @@ $inner-margin: 5rem;
       letter-spacing: -0.04em;
       margin-bottom: 5rem;
       text-align: center;
+
+      @media (720px >= width) {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+      }
+
+      @media (480px >= width) {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
     }
 
     .more-box {
       @include more-box(#fff, $color-main);
       position: static;
+
+      @media (480px >= width) {
+        a {
+          font-size: 0.9rem;
+          padding: 0.35rem 1.3rem;
+        }
+      }
     }
   }
 }
