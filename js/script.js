@@ -7,6 +7,12 @@ function productListSwiperInit() {
     slidesPerGroup: 1,
     breakpoints: {
       // 화면의 너비가 1024px 이상일 때
+      720: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+      },
+      // 화면의 너비가 1024px 이상일 때
       1024: {
         slidesPerView: 3 /* 한 화면당 보여질 슬라이드 개수 */,
         spaceBetween: 35 /* 슬라이드간의 간격 */,

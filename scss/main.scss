@@ -370,18 +370,12 @@ $inner-margin: 5rem;
 
 .product-list-wrap {
   @media (1024px >= width) {
-    .swiper {
-      overflow: visible;
-
-      .swiper-slide {
-        width: 430px;
-      }
+    .inner {
+      margin-inline: 4rem;
     }
 
-    .prod-img-box {
-      img {
-        height: 520px;
-      }
+    .swiper {
+      overflow: visible;
     }
 
     .text-box {
@@ -397,12 +391,6 @@ $inner-margin: 5rem;
     .discount-box {
       font-size: 0.75rem !important;
       padding: 0.3rem 1rem !important;
-    }
-  }
-
-  @media (480px >= width) {
-    .swiper-slide {
-      width: 360px !important;
     }
   }
 
