@@ -832,16 +832,62 @@ $inner-margin: 5rem;
   }
 }
 
-#footer {
-  background: $color-main;
+@mixin common-footer() {
+  background-color: $color-main;
 
   .inner {
     margin: 0;
     padding: 6.25rem 5rem 8.75rem;
+
+    @media (1590px >= width) {
+      padding: 4.25rem 3rem 6.75rem;
+    }
+
+    @media (720px >= width) {
+      padding: 2.25rem 1.5rem 4.75rem;
+    }
   }
 
   .logo-box {
     margin-bottom: 3.75rem;
+
+    @media (720px >= width) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (720px >= width) {
+    .footer__logo {
+      display: block;
+      width: 5.5rem;
+    }
+
+    .footer__info {
+      .pc-text {
+        display: none !important;
+      }
+
+      .info-box {
+        .bar {
+          display: inline-block;
+          height: 10px;
+          width: 1px;
+          background-color: #fff;
+        }
+      }
+
+      .info-text::after {
+        display: none;
+      }
+    }
+  }
+}
+
+#pc-footer {
+  @include common-footer();
+
+  @media (720px >= width) {
+    display: none;
   }
 }
 
@@ -851,6 +897,14 @@ $inner-margin: 5rem;
   color: #fff;
   letter-spacing: -0.04em;
   margin-bottom: 1.5rem;
+
+  @media (1590px >= width) {
+    font-size: 1.4rem;
+  }
+
+  @media (1240px >= width) {
+    font-size: 1.2rem;
+  }
 }
 
 .footer__info {
@@ -860,7 +914,12 @@ $inner-margin: 5rem;
     }
 
     &-box {
-      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+
+      @media (720px >= width) {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
     }
 
     &-text {
@@ -871,6 +930,14 @@ $inner-margin: 5rem;
       position: relative;
       padding-inline: 0.3rem;
       font-size: 1.25rem;
+
+      @media (1590px >= width) {
+        font-size: 1rem;
+      }
+
+      @media (720px >= width) {
+        font-size: 0.8rem;
+      }
 
       &:not(.not-bar)::after {
         content: "";
@@ -890,6 +957,10 @@ $inner-margin: 5rem;
     color: #fff;
     letter-spacing: -0.04em;
     font-size: 1.25rem;
+
+    @media (1590px >= width) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -901,17 +972,39 @@ $inner-margin: 5rem;
   }
 
   .guide-item {
+    @media (720px >= width) {
+      margin-block: 0.7rem;
+
+      ul {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+
     a {
       font-size: 1.25rem;
       color: #fff;
       display: block;
       padding: 0.625rem 0;
       border-bottom: 1px solid;
+
+      @media (1590px >= width) {
+        font-size: 1rem;
+      }
+
+      @media (720px >= width) {
+        border: none;
+        font-size: 0.8rem;
+      }
     }
   }
 }
 
 .footer__conten-us {
+  @media (1024px >= width) {
+    display: none;
+  }
+
   .conten-us-title {
     @include footer-sub-title;
   }
@@ -922,12 +1015,20 @@ $inner-margin: 5rem;
       color: #fff;
       letter-spacing: -0.04em;
       margin-bottom: 0.625rem;
+
+      @media (1590px >= width) {
+        font-size: 1.3rem;
+      }
     }
 
     .desc {
       font-size: 1.25rem;
       color: #fff;
       letter-spacing: -0.04em;
+
+      @media (1590px >= width) {
+        font-size: 1rem;
+      }
     }
 
     .info {
@@ -935,6 +1036,29 @@ $inner-margin: 5rem;
       color: #fff;
       letter-spacing: -0.04em;
       margin-top: 2rem;
+
+      @media (1590px >= width) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+#mobile-footer {
+  @include common-footer();
+  display: none;
+
+  @media (720px >= width) {
+    display: block;
+
+    .footer__guide {
+    }
+  }
+
+  .copy-right-box {
+    .copy-right {
+      font-size: 0.8rem;
+      color: #fff;
     }
   }
 }
